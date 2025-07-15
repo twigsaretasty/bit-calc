@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit Calculator</title>
+</head>
+<body>
+    <label for="size">Size:</label>
+    <input type="text" id="size" name="size" placeholder="Enter Size">
+    <br>
+    <p>Input info:</p>
+    <label for="mb">MB:</label>
+    <input type="radio" id="mb" name="unit">
+    <label for="mb">GB:</label>
+    <input type="radio" id="gb" name="unit">
+    <br>
+    <label for="mac">Mac:</label>
+    <input type="radio" id="mac" name="sys">
+    <label for="win">Windows:</label>
+    <input type="radio" id="win" name="sys">
+    <br>
+    <p>Output info:</p>
+    <label for="out-mb">MB:</label>
+    <input type="radio" id="out-mb" name="out-unit">
+    <label for="out-gb">GB:</label>
+    <input type="radio" id="out-gb" name="out-unit">
+    <br>
+    <label for="out-mac">Mac:</label>
+    <input type="radio" id="out-mac" name="out-sys">
+    <label for="out-win">Windows:</label>
+    <input type="radio" id="out-win" name="out-sys">
+    <br>
+    <input type="button" id="calc" value="Calculate!">
+    <p id="result"></p>
+    <script src="conversion.js"></script>
+</body>
+</html>
