@@ -34,7 +34,7 @@ function convertBitsToMB(bits, system="mac") {
 function convertBitsToGB(bits, system="mac") {
     console.log("converting these bits into gb")
     console.log(bits)
-    let base = 1024
+    let base = 1000
 
     if (system.toLowerCase() == "win") {
         base = 1024
