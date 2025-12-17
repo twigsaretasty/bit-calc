@@ -49,7 +49,7 @@ function addResult(result, unit) {
 
 function calculate() {
     // Get all numbers needed
-    let sizeInput = document.querySelector("#size").value;
+    let sizeInput = Number(document.querySelector("#size").value);
     let sys = "";
     let outSys = "";
     let bits = -1;
@@ -86,8 +86,9 @@ function calculate() {
         let outGb = -1
         if (inUnit == "mb") {
             // Make sure output is used as expected
+            let base = outSys === "win" ? 1024 : 1000
             let tempMb = convertBitsToMB(bits, outSys);
-            outGb = (tempMb / 1000).toFixed(4)
+            outGb = (tempMb / base).toFixed(4)
         }
         else if (inUnit == "gb") {
             outGb = convertBitsToGB(bits, outSys)
